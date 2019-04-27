@@ -1,0 +1,9 @@
+[2019-02-28 13:08:48] local.ERROR: Command "laravel/public/svg" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"laravel/public/svg\" is not defined. at /opt/lampp/htdocs/laravel-project/school_project/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /opt/lampp/htdocs/laravel-project/school_project/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('laravel/public/...')
+#1 /opt/lampp/htdocs/laravel-project/school_project/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /opt/lampp/htdocs/laravel-project/school_project/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /opt/lampp/htdocs/laravel-project/school_project/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /opt/lampp/htdocs/laravel-project/school_project/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

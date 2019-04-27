@@ -1,0 +1,355 @@
+/* css */
+
+// color
+$color-black: #030215 !important;
+$color-transparent: transparent !important;
+$color-white: #fff !important;
+$color-gray: rgba(255, 255, 255, 0.3) !important;
+$color-yellow: rgba(255, 255, 0, 0.9) !important;
+$color-dark-black: #000 !important;
+$color-pink:rgba(255,0,255,0.6);
+$color-red: rgba(255,0,0,1) !important;
+$color-sky-blue: rgba(25, 255, 255, 0.6) !important;
+
+
+// text properties
+$transform-uppercase: uppercase !important;
+
+// font properties
+$font-weight-bold: bold !important;
+$font-weight-lighter: lighter !important;
+$font-family-flamenco-cursive: 'Flamenco', cursive !important;
+
+// box-shadow
+$box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+
+// border properties
+ $border-radius: 200px !important;
+
+body {
+    background-color: $color-white;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3,h4 , h5, h6, nav{
+    text-transform: $transform-uppercase;
+    font-family: $font-family-flamenco-cursive;
+    font-weight: $font-weight-bold;
+}
+
+
+/*    sk  apply default elements properties. */
+.bg--color--1 {
+    background-color: $color-black;
+}
+
+.text--color--1 {
+    color: $color-gray;
+}
+
+.text--color--1:hover {
+    color: $color-yellow;
+}
+
+.shadow--box--1 {
+    box-shadow: $box-shadow;
+}
+
+
+// button default styling...
+.dbtn{
+    display: inline-block;
+    padding: 14px 60px;
+    font-weight: $font-weight-lighter;
+    text-decoration: none;
+    text-transform: $transform-uppercase;
+    font-family: $font-family-flamenco-cursive;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn--style--1{
+    background-color: $color-transparent;
+    color: $color-pink;
+    border: 1px solid $color-pink;
+}
+
+.btn--style--1:hover{
+    background-color: rgba(0,255,0,0.4) !important;
+    color: $color-black;
+}
+
+.btn--style--2:hover{
+    background-color: rgba(244,250,25,0.4);
+    color: $color-black;
+}
+
+.btn--style--2{
+    background-color: $color-transparent;
+    color: $color-red;
+    border: 1px solid $color-red;
+}
+
+
+/* -------------- page loader */
+div#load-screen {
+    text-transform: $transform-uppercase;
+    font-family: $font-family-flamenco-cursive;
+    opacity: 1;
+    position: fixed;
+    z-index: 999999;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+div#load-screen>div#loading {
+    padding: 10px;
+    width: 220px;
+    height: 222px;
+}
+
+
+
+
+
+/* ------------- icon */
+.menu--icon {
+    color: $color-red;
+    font-size: 30px !important;
+    background-color: rgba(255, 0, 0, 0.5) !important;
+    padding: 5px 10px !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+}
+
+
+#hpsad{
+    background: rgba(0, 0, 0, 0.12) url("/assets/img/2.jpg");
+    background-repeat: no repeat;
+    background-size: 100% 100%;
+
+}
+
+/* -------------- footer design */
+#f--link--style li a {
+    text-transform: $transform-uppercase;
+    font-family: $font-family-flamenco-cursive;
+    letter-spacing: 1px;
+    line-height: 25px !important;
+    transition: 0.4s margin-left;
+}
+
+#f--link--style li a:hover {
+    text-decoration: none;
+    margin-left: 25px;
+    transition-duration: 0.8s;
+}
+
+/* color change infinite */
+.event--color{
+    animation: 0.3s eventcolor infinite;
+}
+
+@keyframes eventcolor{
+    0%{
+        color: $color-red;
+    }
+    50%{
+        color: rgba(0,255,0,1)
+    }
+    100%{
+        color: rgba(0,0,255,1);
+    }
+}
+
+
+
+
+.icon-color{
+    color:  $color-pink;
+}
+
+.icon-size {
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+.icon-hover-color {
+    transition: 0.5s margin-top;
+}
+
+.icon-hover-color:hover {
+    margin-top: -20px;
+    transition-duration: 1s;
+    animation: 0.9s colorchange infinite;
+}
+
+@keyframes colorchange {
+    0%{
+        color: red;
+        transition-duration: 2s;
+    }
+    100%{
+        color: rgba(0,0,255,1) !important;
+        transition-duration: 2s;
+    }
+
+}
+
+#fcr {
+    color: $color-sky-blue;
+}
+
+/*  responsive layout */
+@media(min-width: 1200px){
+
+
+    hr {
+        margin: 8px 0px !important;
+      
+    }
+
+    #load-screen img{
+        width: 200px !important;
+    }
+
+    #loading{
+        margin: 0 auto;
+        margin-top: 40vh;
+    }
+
+    footer {
+        padding-top: 150px !important;
+    }
+
+    #smedia {
+        margin-top: 50px;
+    }
+
+    .img--size--1{
+        width: 100%;
+        height:200px;
+        padding:10px;
+    }
+
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    #load-screen img {
+        width: 160px !important;
+        margin-left: 45px;
+    }
+
+    footer {
+        padding-top: 100px !important;
+    }
+
+    #smedia {
+        margin-top: 45px;
+    }
+
+    #loading {
+        margin: 0 auto;
+        margin-top: 40vh;
+    }
+
+    .icon-size {
+        font-size: 30px;
+    }
+
+    hr {
+        margin: 8px 0px !important;
+        
+    }
+    
+    .img--size--1{
+        width: 100%;
+        height:200px;
+        padding:15px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    #load-screen img {
+        width: 110px !important;
+        margin-left: 50px;
+    }
+
+    footer {
+        padding-top: 45px;
+    }
+
+    #smedia {
+        margin-top: 30px;
+    }
+
+    .icon-size {
+        font-size: 30px;
+    }
+
+    #loading {
+        margin: 0 auto;
+        margin-top: 40vh;
+    }
+
+    hr {
+        margin: 4px 0px !important;
+    }
+    
+    .img--size--1{
+        width: 100%;
+        height:200px;
+        padding:15px;
+    }
+ 
+}
+
+@media(max-width: 767px) {
+    #load-screen img {
+        width: 80px !important;
+        margin-left: 60px;
+    }
+
+    #loading {
+        margin: 0 auto;
+        margin-top: 40vh;
+    }
+
+    footer {
+        padding-top: 10px;
+    }
+
+    hr {
+        margin: 4px 0px !important;
+    }
+
+    #smedia {
+        font-size: 14px !important;
+    }
+
+    #smedia h3 {
+        font-size: 23px;
+    }
+
+    .icon-size {
+        font-size: 25px;
+    }
+    
+    .img--size--1{
+        width: 100%;
+        height:200px;
+        padding:15px;
+    }
+  
+    #sd--heading{
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
