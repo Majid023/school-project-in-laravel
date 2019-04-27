@@ -1,0 +1,17 @@
+install xampp server to run the project..
+
+xammp server provide apache server, mariadb, php if not you can downlaod manually.
+install apache server  // if xampp install then not install
+install php >= 7 version // if xampp install then not install 
+
+
+install composer
+install laravel
+run composer command : composer install
+run npm command : npm install
+
+go to .env file and check database name then create database with given name
+run laravel cmd : php artisan migrate
+run laravel cmd : php artisan serve
+
+now prject will be start 
